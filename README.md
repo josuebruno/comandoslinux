@@ -1,7 +1,7 @@
 # Comandos linux
  Tutoriais
 
-## Crieando certificados para apache
+## Criando certificados para apache
 
 ### Criando um arquivo com nano
 
