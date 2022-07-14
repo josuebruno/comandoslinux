@@ -57,14 +57,14 @@ nano <nomedosite>.conf
 
 cp <site80>.conf <site443>.conf
 
-#### escreva 
+## escreva 
 
 <VirtualHost <dnsname>:443>
   ServerName <dnsname>
  
 
   ## Vhost docroot
-  DocumentRoot "/var/www/html/<site>"
+  DocumentRoot "/var/www/html/<'site'>"
 
   ## Directories, there should at least be a declaration for /var/www/html
 
@@ -87,6 +87,9 @@ cp <site80>.conf <site443>.conf
 </VirtualHost>
 
 
+## Redirecionar da 80 para 443 
 
+ ## Redirect rules
+  Redirect  / https://seusite.contoso.com.br/
 
-
+  SetEnvIf X-Forwarded-For "^.*\..*\..*\..*" viaproxy
