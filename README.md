@@ -45,7 +45,7 @@ chown <usuario>:<usuario>  <pasta>
 ##### conveter de para crt
 openssl x509 -inform PEM -in <nomeamigavel>.cer -out <nomeamigavel>.crt
 
-#### navegue ate sites avaiçable
+#### navegue ate sites avaiable
 
 cd /etc/apache2/sites-available/
 
